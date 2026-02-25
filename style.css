@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:"Montserrat";
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+
+}
+
+.section-title{
+    font-size:30px;
+    text-align:center;
+    margin-bottom:20px;
+    font-weight:900;
+}
+
+.menu{
+    background-color:#121212;
+    padding:10px;
+    position:fixed;
+    width:100% ;
+    z-index:50;
+}
+
+.menu-links a{
+    color:white;
+    text-decoration:none;
+    padding:6px;
+    transition:0.5s ;
+}
+
+.menu-links{
+    float:right
+}
+
+.menu-links a:hover{
+    color:#cccccc;
+    
+}
+
+.header{
+    height: 100vh;
+    background-image:linear-gradient(#df8780,#fdc796);
+    position:relative;
+    overflow:hidden;
+}
+
+.header-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+   
+}
+
+.header-content h1{
+    font-size:90px;
+    width:max-content;
+    text-shadow:7px 7px #df6161;
+    color:white;
+}
+
+.header-button{
+    background-color:white;
+    padding:20px 20px;
+    border-radius:30px;
+    color:black;
+    text-decoration:none;
+    box-shadow:7px 7px #df6161 ;
+    display:inline-block;
+    font-weight:600;
+    margin-top:15px;
+}
+
+.about{
+    padding:100px 0
+}
+
+.header-bg img{
+    position:absolute;
+
+}
+
+.circle-dashed-border{
+    right:-110px;
+    bottom:-110px;
+    animation:circle-dashed-border 8s infinite linear;
+}
+
+.triangle{
+    left:40% ;
+    top: 15% ;
+    animation:triangle 5s infinite linear
+}
+
+.octagon{
+    bottom:15%;
+    left: 50%;
+    animation:octagon 5s infinite linear;
+}
+
+.circle-bordered{
+    bottom:-10px ;
+    left:20% ;
+    z-index:10;
+    animation:triangle 5s infinite linear;
+}
+
+.circle1{
+    top:-175px ;
+    left:-60px ;
+    z-index:9;
+    animation:circle1 5s infinite linear
+}
+
+.circle2{
+    top:-150px ; 
+    right:-20px ;
+    animation:circle2 5s infinite linear;
+}
+
+.circle3{
+    bottom:-60px ;
+    left:-60px ; 
+    animation:circle3 5s infinite linear
+}
+
+@keyframes triangle{
+    0%{
+        transform:translate(0)
+    }
+    50%{
+        transform:translateX(200px)
+    }
+    100%{
+        transform:translate(0)
+    }
+}
+
+@keyframes octagon{
+    0%{
+        transform:translate(0) rotate(0)
+    }
+    50%{
+        transform:translate(20px,100px) rotate(180deg)
+    }
+    100%{
+        transform:translate(0,0) rotate(360deg)
+    }
+}
+
+@keyframes circle-dashed-border{
+    0%{
+        transform:rotate(0)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+
+@keyframes circle2{
+    0%{
+        transform:translate(0) rotate(0)
+    }
+    50%{
+        transform:translate(-70px,70px) rotate(180deg)
+    }
+    100%{
+        transform:translate(0,0) rotate(360deg)
+    }
+}
+
+@keyframes circle3{
+    0%{
+        transform:translate(0) 
+    }
+    50%{
+        transform:translate(25px,25px)
+    }
+    100%{
+        transform:translate(0,0)
+    }
+}
+
+@keyframes circle1{
+    0%{
+        transform:translate(0,0) rotate(0)
+    }
+    50%{
+        transform:translate(70px,70px) rotate(180deg)
+    }
+    100%{
+        transform:translate(0,0) rotate(360deg)
+    }
+}
+
+.what-we-do{
+    min-height:100vh;
+    background-image:linear-gradient(7deg, #da7f7e,#fdc495 70%,white 70%);
+    padding-top:150px;
+}
+
+.do-left{
+    width:43%;
+    display:inline-block;
+    vertical-align:bottom;
+}
+
+.do-right{
+    width:49%;
+    display:inline-block;
+    margin-left:2%;
+    vertical-align:bottom;
+}
+
+.do-left p{
+    background-color:white;
+    padding:20px;
+    border-radius:20px;
+    line-height:25px;
+    box-shadow:10px 10px #df6161;
+}
+
+.do-right img{
+    width:95%;
+
+}
+
+.adv-card{
+    border:#fec896 3px solid;
+    padding:15px;
+    margin:25px;
+    width:70%; 
+    border-radius:10px;
+    box-shadow:6px 6px #df6161;
+    background-color:white;
+}
+
+.adv-card ul{
+    padding-left:15px;
+    list-style-type:circle;
+}
+
+.adv-card h3{
+    margin-bottom:10px;
+}
+
+.card-middle{
+    position:relative;
+    right:-20%;
+}
+
+.adv-bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+}
+
+.adv-content{
+    position:relative;
+    z-index:10;
+    padding-top:50px;    
+}
+
+.adv-hexagon{
+    position:sticky;
+    top:10px;
+    left:0;
+}
+
+.adv{
+    min-height:100vh;
+    position:relative;
+}
+
+.portfolio{
+    height:100vh;
+}
+
+
+.adv-circle{
+    position:absolute;
+    bottom:-20%;
+    right:0;
+}
+
+.card1 {
+    background-image:url(img/portfolio/site1.png)
+}
+
+.card2{
+    background-image:url(img/portfolio/site2.png)
+}
+
+.card3{
+    background-image:url(img/portfolio/site3.png)
+}
+
+.card4{
+    background-image:url(img/portfolio/site4.png)
+}
+
+.portfolio-card{
+    width:48%;
+    height:250px;
+    display:inline-block;
+    background-size:cover;
+    background-position:center;
+    border:5px #df6161 solid;
+    border-radius:20px;
+    transition:0.5s;
+}
+
+.portfolio-card:hover{
+    scale:0.9
+}
+
+.footer{
+    background-image:linear-gradient(#df8780,#fdc796);
+    padding:100px 0;
+    text-align:center;
+}
+
+.card{
+    display:inline-block;
+    height:400px;
+    width:30%;
+    border:#fec896 3px solid;
+    vertical-align:top;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    border-radius:15px;
+    background-color:white;
+}
+
+.card hr{
+    border:#df6161 solid 1px;
+    width:60%;
+    margin:5px auto;
+
+}
+
+.services{
+    min-height:100vh;
+    background-image:linear-gradient(155deg,#da7f7e 50%,white 50%)
+}
+
+.services h2{
+    color:white;
+}
+
+
+@media(max-width:430px){
+    .header-content h1{
+        font-size:40px;
+    }
+    .do-left{
+        display:block;
+        width:100%;
+    }
+    .do-right{
+        display:block;
+        width:100%;
+        margin-top:10px
+    }
+    .card{
+        display:block;
+        width:100%;
+        margin-left:0;
+    }
+}
