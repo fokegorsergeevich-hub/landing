@@ -283,7 +283,7 @@
 }
 
 .portfolio{
-    height:100vh;
+    min-height:100vh;
 }
 
 
@@ -378,10 +378,28 @@
         display:block;
         width:100%;
         margin-top:10px;
+        margin-left:0;
     }
     .card{
         display:block;
         width:100%;
         margin-left:0;
+    }
+    .adv-card{
+        width:100%;
+        margin-left:0;
+    }
+    .card-middle{
+        position:static;
+    }
+    .adv-hexagon{
+        display:none;
+    }
+    .portfolio-card{
+        display:block;
+        width:100%;
+    }
+    .portfolio{
+        min-height:100vh;
     }
 }
