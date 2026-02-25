@@ -363,15 +363,21 @@
 @media(max-width:430px){
     .header-content h1{
         font-size:40px;
+        width:fit-content;
     }
     .do-left{
         display:block;
         width:100%;
+    
+    }
+
+    .do-left p{
+        width:95%;
     }
     .do-right{
         display:block;
         width:100%;
-        margin-top:10px
+        margin-top:10px;
     }
     .card{
         display:block;
